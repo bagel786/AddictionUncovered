@@ -1,0 +1,20 @@
+{
+  "name": "addictionuncovered",
+  "version": "1.0.0",
+  "description": "**An Educational Web App on Substance Abuse Awareness**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^4.1.17"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6"
+  }
+}

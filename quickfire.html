@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Fire Quiz - Addiction Uncovered</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-red-100 min-h-screen">
+    <!-- Header -->
+    <div class="p-4 bg-white shadow-sm">
+        <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to Home
+        </a>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="max-w-2xl mx-auto px-4 py-16 text-center">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Quick Fire Quiz</h1>
+            <p class="text-gray-600 mb-8">Answer as many True/False questions as you can in 60 seconds!</p>
+            <button id="start-btn"
+                class="px-12 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xl font-bold rounded-full hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105">
+                Start Quiz
+            </button>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="hidden max-w-3xl mx-auto px-4 py-8">
+        <!-- Stats Bar -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
+            <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                <div>
+                    <p class="text-gray-500 text-sm">Score</p>
+                    <p id="score" class="text-3xl font-bold text-green-600">0</p>
+                </div>
+                <div>
+                    <p class="text-gray-500 text-sm">Streak</p>
+                    <p id="streak" class="text-3xl font-bold text-orange-600">0</p>
+                </div>
+                <div>
+                    <p class="text-gray-500 text-sm">Time</p>
+                    <p id="timer" class="text-3xl font-bold text-red-600">60</p>
+                </div>
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div id="time-bar"
+                    class="bg-gradient-to-r from-green-500 via-yellow-500 to-red-500 h-2 rounded-full transition-all duration-1000"
+                    style="width: 100%"></div>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <p class="text-sm text-gray-500 mb-2 text-center">Question <span id="question-num">1</span></p>
+            <h2 id="question-text"
+                class="text-2xl font-bold text-gray-800 text-center mb-8 min-h-24 flex items-center justify-center">
+                <!-- Question will be inserted here -->
+            </h2>
+
+            <!-- Answer Buttons -->
+            <div class="grid grid-cols-2 gap-4">
+                <button id="true-btn"
+                    class="py-6 bg-green-500 hover:bg-green-600 text-white text-2xl font-bold rounded-xl transition-all transform hover:scale-105 active:scale-95">
+                    TRUE
+                </button>
+                <button id="false-btn"
+                    class="py-6 bg-red-500 hover:bg-red-600 text-white text-2xl font-bold rounded-xl transition-all transform hover:scale-105 active:scale-95">
+                    FALSE
+                </button>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div id="feedback" class="hidden text-center">
+            <p id="feedback-text" class="text-xl font-semibold"></p>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="results-screen" class="hidden max-w-2xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-2xl shadow-lg p-8 text-center">
+            <div class="text-6xl mb-4">🏆</div>
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Time's Up!</h2>
+            <div class="mb-8">
+                <p class="text-gray-600 mb-2">Final Score</p>
+                <p id="final-score" class="text-6xl font-bold text-blue-600 mb-4">0</p>
+                <p class="text-gray-600">
+                    <span id="correct-count">0</span> correct out of <span id="total-count">0</span>
+                </p>
+                <p class="text-lg font-semibold text-orange-600 mt-2">
+                    Best Streak: <span id="best-streak">0</span> 🔥
+                </p>
+            </div>
+            <div class="space-y-3">
+                <button id="play-again-btn"
+                    class="w-full px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xl font-bold rounded-full hover:from-orange-600 hover:to-red-600 transition-all">
+                    Play Again
+                </button>
+                <a href="index.html"
+                    class="block w-full px-8 py-4 bg-gray-200 text-gray-700 text-xl font-bold rounded-full hover:bg-gray-300 transition-all">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/quickfire.js"></script>
+</body>
+
+</html>
