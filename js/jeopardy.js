@@ -190,7 +190,7 @@ function initBoard() {
                     data-category="${cat}"
                     data-index="${i}"
                     data-id="${questionId}"
-                    onclick="selectQuestion('${cat}', ${i}, '${questionId}')"
+                    onclick="selectQuestion('${cat.replace(/'/g, "\\'")}', ${i}, '${questionId}')"
                 >
                     ${question.points}
                 </button>
@@ -288,4 +288,4 @@ function updateScoreboard() {
 window.selectQuestion = selectQuestion;
 
 // Initialize the game
-initBoard();
+document.addEventListener('DOMContentLoaded', initBoard);
