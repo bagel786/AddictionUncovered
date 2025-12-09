@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Fire Quiz - Addiction Uncovered</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -55,9 +56,9 @@
         <div class="bg-white rounded-2xl shadow-lg p-8">
             <h1 class="text-4xl font-bold text-gray-800 mb-4">Quick Fire Quiz</h1>
             <p class="text-gray-600 mb-8">Answer as many True/False questions as you can in 60 seconds!</p>
-            <button id="start-btn"
-                class="px-12 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xl font-bold rounded-full hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105">
-                Start Quiz
+            class="px-12 py-4 bg-gradient-to-r from-uncovered-purple to-uncovered-teal text-white text-xl font-bold
+            rounded-full hover:shadow-lg hover:scale-105 transition-all transform duration-200">
+            Start Quiz
             </button>
         </div>
     </div>
@@ -122,7 +123,7 @@
             <h2 class="text-4xl font-bold text-gray-800 mb-4">Time's Up!</h2>
             <div class="mb-8">
                 <p class="text-gray-600 mb-2">Final Score</p>
-                <p id="final-score" class="text-6xl font-bold text-blue-600 mb-4">0</p>
+                <p id="final-score" class="text-6xl font-bold text-uncovered-purple mb-4">0</p>
                 <p class="text-gray-600">
                     <span id="correct-count">0</span> correct out of <span id="total-count">0</span>
                 </p>
@@ -132,7 +133,7 @@
             </div>
             <div class="space-y-3">
                 <button id="play-again-btn"
-                    class="w-full px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xl font-bold rounded-full hover:from-orange-600 hover:to-red-600 transition-all">
+                    class="w-full px-8 py-4 bg-gradient-to-r from-uncovered-purple to-uncovered-teal text-white text-xl font-bold rounded-full hover:shadow-lg hover:scale-105 transition-all transform duration-200">
                     Play Again
                 </button>
                 <a href="index.html"

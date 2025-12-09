@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Match - Addiction Uncovered</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -72,11 +73,11 @@
                 </div>
                 <div>
                     <p class="text-gray-500 text-sm">Moves</p>
-                    <p id="moves" class="text-3xl font-bold text-blue-600">0</p>
+                    <p id="moves" class="text-3xl font-bold text-uncovered-purple">0</p>
                 </div>
                 <div>
                     <p class="text-gray-500 text-sm">Best</p>
-                    <p id="best-score" class="text-3xl font-bold text-purple-600">--</p>
+                    <p id="best-score" class="text-3xl font-bold text-uncovered-teal">--</p>
                 </div>
             </div>
         </div>
@@ -89,7 +90,7 @@
         <!-- Reset Button -->
         <div class="text-center">
             <button id="reset-btn"
-                class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                class="px-8 py-3 bg-uncovered-purple text-white font-semibold rounded-lg hover:bg-uncovered-dark transition-colors">
                 New Game
             </button>
         </div>
@@ -101,9 +102,9 @@
                 <div class="text-6xl mb-4">🎉</div>
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Congratulations!</h2>
                 <p class="text-gray-600 mb-2">You matched all pairs!</p>
-                <p id="final-moves" class="text-2xl font-bold text-blue-600 mb-6"></p>
+                <p id="final-moves" class="text-2xl font-bold text-uncovered-purple mb-6"></p>
                 <button id="play-again-btn"
-                    class="px-8 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors">
+                    class="px-8 py-3 bg-uncovered-teal text-white font-semibold rounded-lg hover:bg-teal-600 transition-colors">
                     Play Again
                 </button>
             </div>

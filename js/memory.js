@@ -70,11 +70,11 @@ function renderBoard() {
         cardEl.dataset.index = index;
         cardEl.innerHTML = `
             <div class="card-inner relative w-full h-full transition-transform duration-500 transform-style-3d">
-                <div class="card-face card-back absolute w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center backface-hidden">
+                <div class="card-face card-back absolute w-full h-full bg-gradient-to-br from-uncovered-purple to-uncovered-dark rounded-lg flex items-center justify-center backface-hidden shadow-md">
                     <div class="text-4xl">🧠</div>
                 </div>
-                <div class="card-face card-front absolute w-full h-full bg-white rounded-lg shadow-lg flex items-center justify-center p-3 backface-hidden ${card.type === 'term' ? 'bg-blue-50' : 'bg-green-50'}">
-                    <p class="text-center text-sm sm:text-base font-semibold ${card.type === 'term' ? 'text-blue-800' : 'text-green-800'}">${card.content}</p>
+                <div class="card-face card-front absolute w-full h-full bg-white rounded-lg shadow-lg flex items-center justify-center p-3 backface-hidden border-2 ${card.type === 'term' ? 'border-uncovered-purple bg-uncovered-cream' : 'border-uncovered-teal bg-teal-50'}">
+                    <p class="text-center text-sm sm:text-base font-semibold ${card.type === 'term' ? 'text-uncovered-purple' : 'text-teal-700'}">${card.content}</p>
                 </div>
             </div>
         `;

@@ -173,7 +173,7 @@ function initBoard() {
     // Headers
     categoryNames.forEach(cat => {
         boardHTML += `
-            <div class="bg-gradient-to-br from-blue-600 to-purple-600 text-white p-3 sm:p-4 rounded-lg text-center font-bold text-xs sm:text-sm">
+            <div class="bg-gradient-to-br from-uncovered-purple to-uncovered-dark text-white p-2 sm:p-4 rounded-lg text-center font-bold text-xs sm:text-sm flex items-center justify-center shadow-md">
                 ${cat}
             </div>
         `;
@@ -186,7 +186,7 @@ function initBoard() {
             const questionId = `${cat}-${i}`;
             boardHTML += `
                 <button 
-                    class="question-tile bg-blue-500 hover:bg-blue-600 text-white p-4 sm:p-6 rounded-lg font-bold text-lg sm:text-2xl transition-all"
+                    class="question-tile bg-uncovered-purple bg-opacity-90 hover:bg-uncovered-teal text-white p-4 sm:p-6 rounded-lg font-bold text-lg sm:text-2xl transition-all shadow-sm hover:shadow-md transform hover:-translate-y-1"
                     data-category="${cat}"
                     data-index="${i}"
                     data-id="${questionId}"
@@ -275,7 +275,7 @@ document.getElementById('close-modal').addEventListener('click', () => {
 function switchTeam() {
     currentTeam = currentTeam === 'A' ? 'B' : 'A';
     currentTeamEl.textContent = `Team ${currentTeam}`;
-    currentTeamEl.className = `text-2xl font-bold ${currentTeam === 'A' ? 'text-blue-600' : 'text-purple-600'}`;
+    currentTeamEl.className = `text-2xl font-bold ${currentTeam === 'A' ? 'text-uncovered-purple' : 'text-uncovered-teal'}`;
 }
 
 // Update scoreboard
