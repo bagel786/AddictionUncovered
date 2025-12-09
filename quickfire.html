@@ -5,18 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Fire Quiz - Addiction Uncovered</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'uncovered': {
+                            'purple': '#7A6685',      // Vintage Lavender from Logo
+                            'cream': '#FCFBF7',       // Warm Paper Background
+                            'dark': '#2D2433',        // Dark Purple-Black Text
+                            'teal': '#5A9E9E',        // Vintage Teal Accent
+                            'gray': '#D4D0D9',        // Soft Gray
+                        }
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="bg-gradient-to-br from-orange-50 to-red-100 min-h-screen">
+<body class="bg-gradient-to-br from-uncovered-cream to-red-50 min-h-screen font-body text-uncovered-dark">
     <!-- Header -->
-    <div class="p-4 bg-white shadow-sm">
-        <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Back to Home
-        </a>
+    <div class="bg-white shadow-md border-b border-uncovered-gray border-opacity-20 sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html"
+                class="flex items-center text-uncovered-purple hover:text-uncovered-teal transition-colors duration-300 font-medium">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to Home
+            </a>
+            <div class="flex items-center space-x-2">
+                <div
+                    class="h-12 w-12 rounded-full overflow-hidden shrink-0 border-2 border-uncovered-purple border-opacity-20">
+                    <img src="assets/images/logo.jpg" alt="Addiction Uncovered Logo"
+                        class="h-full w-full object-cover transform scale-125">
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Start Screen -->
