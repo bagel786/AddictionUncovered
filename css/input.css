@@ -45,7 +45,7 @@
 
     /* Gradient Backgrounds */
     .gradient-purple {
-        background: linear-gradient(135deg, #5E4A77 0%, #7B6394 100%);
+        background: linear-gradient(135deg, #7D4199 0%, #5D2E7A 100%);
     }
 
     .gradient-teal {
@@ -138,7 +138,7 @@
     }
 
     .text-gradient-purple {
-        background: linear-gradient(135deg, #5E4A77 0%, #8B6FA8 100%);
+        background: linear-gradient(135deg, #7D4199 0%, #9D62B8 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -156,8 +156,8 @@
     /* Particle Background */
     .particle-bg {
         background:
-            radial-gradient(circle at 20% 50%, rgba(94, 74, 119, 0.05) 0%, transparent 50%),
-            radial-gradient(circle at 80% 80%, rgba(62, 180, 180, 0.05) 0%, transparent 50%),
-            radial-gradient(circle at 40% 20%, rgba(94, 74, 119, 0.03) 0%, transparent 50%);
+            radial-gradient(circle at 20% 50%, rgba(125, 65, 153, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(74, 194, 194, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 40% 20%, rgba(125, 65, 153, 0.03) 0%, transparent 50%);
     }
 }

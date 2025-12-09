@@ -5,10 +5,10 @@ module.exports = {
         extend: {
             colors: {
                 'uncovered': {
-                    'purple': '#5E4A77',      // Primary Logo Purple
-                    'cream': '#FAF8F3',        // Base / Background Cream  
-                    'dark': '#1D2A3B',         // Dark Anchor Text
-                    'teal': '#3EB4B4',         // Sleek Accent Teal
+                    'purple': '#7D4199',      // Updated Logo Purple
+                    'cream': '#F9F7FA',        // Light Purple Tinted Cream
+                    'dark': '#2D1B36',         // Darker Purple-Black text
+                    'teal': '#4AC2C2',         // Complimentary Teal
                     'gray': '#C4C8CC',         // Neutral Gray
                 }
             },
