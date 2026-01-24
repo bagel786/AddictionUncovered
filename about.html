@@ -13,10 +13,9 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Addiction Uncovered</title>
+    <title>About & Contact - Addiction Uncovered</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <meta name="description"
-        content="Learn about Addiction Uncovered's mission to raise awareness of substance abuse through education.">
+    <meta name="description" content="Learn about our mission and get in touch with Addiction Uncovered.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,13 +83,11 @@
                 <div class="hidden md:flex space-x-8">
                     <a href="index.html"
                         class="text-uncovered-dark hover:text-uncovered-teal transition-colors duration-300 font-medium">Home</a>
-                    <a href="about.html" class="text-uncovered-teal font-semibold">About Us</a>
                     <a href="resources.html"
                         class="text-uncovered-dark hover:text-uncovered-teal transition-colors duration-300 font-medium">Resources</a>
-                    <a href="contact.html"
-                        class="text-uncovered-dark hover:text-uncovered-teal transition-colors duration-300 font-medium">Contact</a>
                     <a href="statistics.html"
                         class="text-uncovered-dark hover:text-uncovered-teal transition-colors duration-300 font-medium">Statistics</a>
+                    <a href="about.html" class="text-uncovered-teal font-semibold">About & Contact</a>
                 </div>
             </div>
         </div>
@@ -99,15 +96,14 @@
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-uncovered-purple to-uncovered-teal text-white py-20 px-4">
         <div class="max-w-5xl mx-auto text-center fade-in">
-            <h1 class="text-5xl md:text-6xl font-heading font-bold mb-6">Our Mission</h1>
+            <h1 class="text-5xl md:text-6xl font-heading font-bold mb-6">About Us & Contact</h1>
             <p class="text-xl md:text-2xl opacity-90 leading-relaxed">
-                We're a mental health campaign focused on raising awareness about substance abuse through education,
-                empathy, and community engagement.
+                Learn about our mission to raise awareness and connect with us for support.
             </p>
         </div>
     </section>
 
-    <!-- Main Content -->
+    <!-- About Content -->
     <section class="py-20 px-4">
         <div class="max-w-4xl mx-auto">
             <!-- Who We Are -->
@@ -189,7 +185,7 @@
             </div>
 
             <!-- Our Approach -->
-            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl fade-in">
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl fade-in mb-20">
                 <div class="flex items-center mb-6">
                     <div
                         class="w-16 h-16 bg-uncovered-purple rounded-xl flex items-center justify-center text-white mr-4">
@@ -230,25 +226,122 @@
                 </div>
             </div>
 
-            <!-- CTA -->
-            <div class="mt-16 text-center">
-                <h3 class="text-3xl font-heading font-bold text-uncovered-purple mb-6">Join Us in Making a Difference
-                </h3>
-                <p class="text-lg text-uncovered-dark opacity-80 mb-8 max-w-2xl mx-auto">
-                    Whether you're here to learn, find support, or deepen your understanding, you're part of a community
-                    that cares.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="index.html#games"
-                        class="bg-uncovered-teal text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                        Explore Games
-                    </a>
-                    <a href="resources.html"
-                        class="bg-uncovered-purple text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                        Find Resources
-                    </a>
+            <!-- Contact Section Start -->
+            <div id="contact" class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
+                    <h2 class="text-3xl font-heading font-bold text-uncovered-purple mb-6">Send Us a Message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-uncovered-dark mb-2">Your
+                                Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 rounded-lg border-2 border-uncovered-gray focus:border-uncovered-teal focus:outline-none focus:ring-2 focus:ring-uncovered-teal focus:ring-opacity-30 transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-uncovered-dark mb-2">Your
+                                Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 rounded-lg border-2 border-uncovered-gray focus:border-uncovered-teal focus:outline-none focus:ring-2 focus:ring-uncovered-teal focus:ring-opacity-30 transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-uncovered-dark mb-2">Your
+                                Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                class="w-full px-4 py-3 rounded-lg border-2 border-uncovered-gray focus:border-uncovered-teal focus:outline-none focus:ring-2 focus:ring-uncovered-teal focus:ring-opacity-30 transition-all duration-300"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-uncovered-teal text-white px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-feedback" class="mt-6 p-4 rounded-lg hidden"></div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <!-- Email -->
+                    <div class="bg-gradient-to-br from-purple-50 to-white rounded-3xl p-8 shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-14 h-14 bg-uncovered-purple rounded-xl flex items-center justify-center text-white mr-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-heading font-bold text-uncovered-purple">Email Us</h3>
+                                <a href="mailto:Addictionuncoveredpromotion@gmail.com"
+                                    class="text-uncovered-teal hover:underline">
+                                    Addictionuncoveredpromotion@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-gradient-to-br from-teal-50 to-white rounded-3xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-heading font-bold text-uncovered-purple mb-6">Connect With Us</h3>
+                        <div class="space-y-4">
+                            <a href="https://instagram.com/addictionuncoveredpromo" target="_blank"
+                                class="flex items-center p-4 bg-white rounded-xl shadow hover:shadow-lg transition-all duration-300 group">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-lg flex items-center justify-center text-white mr-4 group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-uncovered-dark">Instagram</p>
+                                    <p class="text-sm text-uncovered-gray">@addictionuncoveredpromo</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tiktok.com/@addictionuncoveredpromo" target="_blank"
+                                class="flex items-center p-4 bg-white rounded-xl shadow hover:shadow-lg transition-all duration-300 group">
+                                <div
+                                    class="w-12 h-12 bg-black rounded-lg flex items-center justify-center text-white mr-4 group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-uncovered-dark">TikTok</p>
+                                    <p class="text-sm text-uncovered-gray">@addictionuncoveredpromo</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Help Notice -->
+                    <div
+                        class="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-8 shadow-lg border-2 border-red-200">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center text-white mr-4 flex-shrink-0">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-heading font-bold text-red-700 mb-2">Need Immediate Help?</h3>
+                                <p class="text-uncovered-dark opacity-80 mb-3">
+                                    If you or someone you know is in crisis, please visit our <a href="resources.html"
+                                        class="text-uncovered-teal font-semibold hover:underline">Resources page</a> for
+                                    immediate support hotlines.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -264,17 +357,18 @@
                 <div>
                     <h3 class="text-xl font-heading font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="about.html"
-                                class="text-gray-300 hover:text-uncovered-teal transition-colors duration-300">About
-                                Us</a></li>
+                        <li><a href="index.html"
+                                class="text-gray-300 hover:text-uncovered-teal transition-colors duration-300">Home</a>
+                        </li>
                         <li><a href="resources.html"
                                 class="text-gray-300 hover:text-uncovered-teal transition-colors duration-300">Resources</a>
                         </li>
-                        <li><a href="contact.html"
-                                class="text-gray-300 hover:text-uncovered-teal transition-colors duration-300">Contact</a>
-                        </li>
                         <li><a href="statistics.html"
                                 class="text-gray-300 hover:text-uncovered-teal transition-colors duration-300">Statistics</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="text-gray-300 hover:text-uncovered-teal transition-colors duration-300">About &
+                                Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -285,7 +379,7 @@
                             class="text-gray-300 hover:text-uncovered-teal transition-colors duration-300">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
                         <a href="https://tiktok.com/@addictionuncoveredpromo" target="_blank"
@@ -304,6 +398,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
