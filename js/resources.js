@@ -2,33 +2,33 @@ const resourceContent = {
     'understanding': {
         title: 'Understanding Addiction',
         content: `
-            <p class="mb-4">Addiction is a complex, chronic medical condition involving interactions among brain circuits, genetics, the environment, and an individual’s life experiences. People with addiction use substances or engage in behaviors that become compulsive and often continue despite harmful consequences. Addiction is not a lack of willpower, but a disease that affects the brain's reward system.</p>
-            <p class="mb-4">Risk factors for addiction can vary and include genetics, environment, and development. For instance, a family history of addiction can increase susceptibility, while peer pressure or lack of family involvement can also play significant roles. Adolescents are particularly vulnerable because their brains are still developing in areas that govern decision-making and self-control.</p>
-            <p>Recovery is possible and looks different for everyone. It typically involves a combination of medication, behavioral counseling, and long-term follow-up to prevent relapse. Effective treatment addresses the whole person, not just the substance abuse, and empowers individuals to regain control of their lives and build a supportive community.</p>
+            <p class="mb-4">Addiction is a complex chronic medical condition involving brain circuits, genetics, environment, and life experiences. When someone has an addiction, they continue using substances or engaging in certain behaviors despite harmful consequences. Addiction is not about weakness or lack of willpower—it's a disease that affects the brain's reward system.</p>
+            <p class="mb-4">Several risk factors can increase the likelihood of developing an addiction. Genetics plays a significant role, meaning family history can increase susceptibility. Environmental factors like peer pressure or limited family support can also contribute to substance use. Adolescents are particularly vulnerable because their brains are still developing in areas responsible for decision-making and self-control.</p>
+            <p>Recovery is possible and looks different for everyone. It typically involves a combination of medication, therapy, and ongoing support to prevent relapse. Effective treatment addresses the whole person—not just the substance use—providing tools to regain control and build meaningful connections.</p>
         `
     },
     'prevention': {
         title: 'Prevention Resources',
         content: `
-            <p class="mb-4">Prevention strategies are essential in reducing the risk of substance abuse, particularly among young people. Evidence-based prevention programs work by boosting protective factors—such as strong family bonds and social skills—while reducing risk factors like early aggressive behavior or poor social skills. These programs can be implemented in schools, families, and communities.</p>
-            <p class="mb-4">Early intervention is key. Educators and parents can look for warning signs such as sudden changes in behavior, academic struggles, or changes in friend groups. Open communication is one of the most powerful tools for prevention; talking honestly about the risks of drug use and listening to youth concerns can foster trust and resilience.</p>
-            <p>Community prevention efforts also play a vital role. By creating environments that support healthy choices—through after-school programs, mentoring, and policy changes—communities can significantly lower the rates of substance initially and long-term abuse.</p>
+            <p class="mb-4">Prevention plays a crucial role in reducing substance abuse, particularly among young people. Evidence-based programs focus on strengthening protective factors—such as strong family relationships and social skills—while addressing risk factors like aggressive behavior or social difficulties. These programs are implemented in schools, homes, and communities.</p>
+            <p class="mb-4">Early intervention is essential. Educators and parents can identify warning signs such as sudden behavior changes, declining grades, or shifts in peer groups. Open communication about the risks of drug use and active listening to youth concerns are powerful prevention tools that build trust and resilience.</p>
+            <p>Community prevention efforts are equally important. When communities create environments that support healthy choices—through after-school programs, mentoring, and policy initiatives—they can significantly reduce substance abuse rates both immediately and long-term.</p>
         `
     },
     'family': {
         title: 'Family Support',
         content: `
-            <p class="mb-4">Addiction doesn't only affect the individual, but can also affect those close to them as well their enviornment. Family members often experience confusion, guilt, and exhaustion. It is crucial for families to find their own support systems to navigate these challenges. Groups like Al-Anon and Alateen primarily focus on the well-being of the family, helping them understand that they didn't cause the addiction and cannot cure it.</p>
-            <p class="mb-4">Educational resources can help families set healthy boundaries and improve communication. Learning about the disease of addiction reduces stigma and helps family members approach their loved one with empathy rather than judgment. This supportive approach can sometimes encourage the individual to seek help.</p>
-            <p>Taking care of oneself is also vital for family members. Engaging in self-care, seeking professional therapy, and connecting with others in similar situations can provide the strength and stability needed to cope with the impacts of addiction on the family unit.</p>
+            <p class="mb-4">Addiction affects not only the individual but also those closest to them. Family members often experience confusion, guilt, and exhaustion. Finding support systems is essential for families navigating these challenges. Groups like Al-Anon and Alateen help families understand that they didn't cause the addiction and cannot cure it.</p>
+            <p class="mb-4">Education about addiction helps families establish healthy boundaries and improve communication. Understanding addiction as a disease makes it easier to approach loved ones with empathy rather than judgment. This supportive approach can encourage individuals to seek help.</p>
+            <p>Self-care is vital for family members. Engaging in personal wellness, seeking professional therapy, and connecting with others in similar situations provides the strength needed to cope with addiction's impact on the family.</p>
         `
     },
     'mental-health': {
         title: 'Mental Health Support',
         content: `
-            <p class="mb-4">Mental health and substance use disorders are often deeply interconnected, a condition known as co-occurring disorders or dual diagnosis. Individuals may use substances to cope with symptoms of mental health issues like anxiety, depression, or trauma. Conversely, substance abuse can trigger or worsen these mental health conditions.</p>
-            <p class="mb-4">Integrated treatment that addresses both mental health and substance use simultaneously is often the most effective approach. Resources provided by organizations like the Jed Foundation and CVS Health emphasize the importance of accessible mental health care and offer tools for emotional well-being and crisis management.</p>
-            <p>Recognizing the signs of mental health distress is the first step toward getting help. Whether it's through professional therapy, support groups, or crisis hotlines, connecting with mental health resources can provide the necessary tools for recovery and long-term wellness.</p>
+            <p class="mb-4">Mental health and substance use disorders are often interconnected—a condition known as co-occurring disorders or dual diagnosis. Individuals may use substances to cope with mental health symptoms like anxiety, depression, or trauma. However, substance use can worsen existing mental health conditions or trigger new ones.</p>
+            <p class="mb-4">Integrated treatment addressing both mental health and substance use simultaneously is often most effective. Organizations like the Jed Foundation and CVS Health emphasize accessible mental health care and provide tools for emotional well-being and crisis support.</p>
+            <p>Recognizing signs of mental health distress is the first step toward getting help. Professional therapy, support groups, and crisis hotlines offer essential resources for recovery and long-term wellness.</p>
         `
     }
 };
