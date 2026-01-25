@@ -3,62 +3,62 @@ const puzzles = [
     {
         category: "Alcohol",
         clues: ["Beer", "Wine", "Vodka", "Whiskey", "Champagne", "Rum"],
-        info: "Alcohol is the most commonly used addictive substance. About 17 million people in the U.S. have an alcohol use disorder.",
-        hints: ["This substance is legal but still dangerous", "Often found at social gatherings"]
+        info: "Alcohol is common, but 17 million people in the U.S. struggle with it. It's no joke.",
+        hints: ["Legal but still dangerous", "You see it at parties"]
     },
     {
         category: "Nicotine",
         clues: ["Cigarettes", "Vaping", "Tobacco", "Patches", "Gum", "Cigars"],
-        info: "Nicotine is highly addictive. It takes only 10 seconds for nicotine to reach the brain after inhaling.",
-        hints: ["Highly addictive stimulant", "Available in many forms"]
+        info: "Nicotine is crazy addictive. It hits your brain in just 10 seconds.",
+        hints: ["Super addictive stimulant", "Comes in vapes and smokes"]
     },
     {
         category: "Opioids",
         clues: ["Morphine", "Codeine", "Fentanyl", "Heroin", "Oxycodone", "Prescription"],
-        info: "Opioid addiction affects over 2 million Americans. Fentanyl is 50-100 times more potent than morphine.",
-        hints: ["Pain management medications", "Major epidemic in recent years"]
+        info: "Opioids are a massive crisis right now. Fentanyl is insanely strong—50-100x stronger than morphine.",
+        hints: ["Painkillers gone wrong", "Huge epidemic recently"]
     },
     {
         category: "Risk Factors",
         clues: ["Genetics", "Trauma", "Stress", "Peer Pressure", "Environment", "Mental Health"],
-        info: "Addiction is influenced by genetics (40-60%), environment, and mental health. No single factor determines addiction.",
-        hints: ["Things that increase vulnerability", "Not just one cause"]
+        info: "Addiction comes from a mix of your genes (40-60%), your environment, and your mental health.",
+        hints: ["Things that make you vulnerable", "Not just one cause"]
     },
     {
         category: "Protective Factors",
         clues: ["Support", "Counseling", "Exercise", "Hobbies", "Family", "Education"],
-        info: "Strong social connections, healthy coping mechanisms, and education reduce addiction risk by up to 50%.",
-        hints: ["Things that help prevent addiction", "Build resilience"]
+        info: "Having good friends, hobbies, and family support can cut your addiction risk in half.",
+        hints: ["Things that keep you safe", "Building strength"]
     },
     {
         category: "Warning Signs",
         clues: ["Tolerance", "Withdrawal", "Cravings", "Isolation", "Neglect", "Secrecy"],
-        info: "Early recognition of warning signs can lead to earlier intervention and better outcomes.",
-        hints: ["Red flags of substance abuse", "Early indicators"]
+        info: "Catching these signs early makes a huge difference. Don't ignore them.",
+        hints: ["Red flags", "Early clues something's wrong"]
     },
     {
         category: "Recovery",
         clues: ["Therapy", "Support Groups", "Medication", "Mindfulness", "Sobriety", "Relapse Prevention"],
-        info: "Recovery is possible! With proper treatment, many people achieve long-term sobriety and improved quality of life.",
-        hints: ["The journey to wellness", "Multiple pathways exist"]
+        info: "Recovery is totally possible! With the right help, people get their lives back every day.",
+        hints: ["Getting better", "The path to healing"]
     },
     {
         category: "Cannabis",
         clues: ["Marijuana", "THC", "CBD", "Joint", "Edibles", "Vape"],
-        info: "Cannabis affects brain development in teens. Regular use before age 25 can impact memory and learning.",
-        hints: ["Most commonly used illegal drug", "Affects brain development"]
+        info: "Using weed before 25 can mess with how your brain grows, especially memory and learning.",
+        hints: ["Most common illegal drug", "Green plant"]
     },
     {
         category: "Stimulants",
         clues: ["Cocaine", "Meth", "Adderall", "Caffeine", "Energy", "Speed"],
-        info: "Stimulants increase alertness and energy but can be highly addictive and dangerous.",
-        hints: ["Drugs that speed up body functions", "Increase energy and focus"]
+        info: "Stimulants speed you up, but the crash is hard and they can be super addictive.",
+        hints: ["Uppers", "Energy boosters"]
     },
     {
         category: "Coping Skills",
         clues: ["Meditation", "Journaling", "Breathing", "Art", "Music", "Walking"],
-        info: "Healthy coping skills help manage stress and emotions without substances.",
-        hints: ["Alternative ways to manage stress", "Healthier choices"]
+        info: "Healthy coping skills let you deal with stress without needing drugs or alcohol.",
+        hints: ["Better ways to handle stress", "Healthy choices"]
     }
 ];
 

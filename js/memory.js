@@ -1,13 +1,13 @@
 // Memory Match Game Logic
 const cardPairs = [
     { id: 1, text: "Alcohol", pair: "Most used addictive substance" },
-    { id: 2, text: "Nicotine", pair: "Reaches brain in 10 seconds" },
-    { id: 3, text: "Opioids", pair: "Used for pain relief" },
-    { id: 4, text: "Tolerance", pair: "Needing more for same effect" },
-    { id: 5, text: "Withdrawal", pair: "Symptoms when stopping use" },
+    { id: 2, text: "Nicotine", pair: "Hits your brain in 10 seconds" },
+    { id: 3, text: "Opioids", pair: "Pain meds that can hook you" },
+    { id: 4, text: "Tolerance", pair: "Needing more to feel the same" },
+    { id: 5, text: "Withdrawal", pair: "Feeling sick when you quit" },
     { id: 6, text: "Genetics", pair: "40-60% of addiction risk" },
-    { id: 7, text: "Recovery", pair: "Treatment + support = success" },
-    { id: 8, text: "Prevention", pair: "Education + communication" }
+    { id: 7, text: "Recovery", pair: "Treatment + connection = success" },
+    { id: 8, text: "Prevention", pair: "Real talk + education" }
 ];
 
 let cards = [];

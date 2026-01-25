@@ -3,121 +3,121 @@ const categories = {
     "Substance Facts": [
         {
             points: 100,
-            question: "This substance is the most commonly used addictive drug in the world.",
+            question: "What's the most common addictive drug in the world?",
             options: ["Caffeine", "Alcohol", "Nicotine", "Cannabis"],
             answer: 0,
-            info: "Caffeine is found in coffee, tea, soda, and chocolate. About 90% of adults consume it daily!"
+            info: "Yep, caffeine. It's in coffee, tea, soda, and chocolate. Like 90% of adults use it every single day."
         },
         {
             points: 200,
-            question: "The active ingredient in marijuana that produces psychoactive effects.",
+            question: "This stuff in weed is what gets you high.",
             options: ["CBD", "THC", "Nicotine", "Tannins"],
             answer: 1,
-            info: "THC (Tetrahydrocannabinol) is the main psychoactive compound in cannabis."
+            info: "THC is the main chemical in cannabis that messes with your head."
         },
         {
             points: 300,
-            question: "This prescription medication class is highly addictive and used for pain relief.",
+            question: "Doctors prescribe these for pain, but they can be super addictive.",
             options: ["Antibiotics", "Antihistamines", "Opioids", "Antacids"],
             answer: 2,
-            info: "Opioids include medications like oxycodone, morphine, and fentanyl. They're effective for pain but carry high addiction risk."
+            info: "Opioids like oxycodone and fentanyl kill pain, but they're also really dangerous if you're not careful."
         },
         {
             points: 400,
-            question: "How long does it take for nicotine to reach the brain after inhaling?",
+            question: "How fast does nicotine hit your brain after you inhale?",
             options: ["10 seconds", "1 minute", "5 minutes", "30 minutes"],
             answer: 0,
-            info: "Nicotine reaches the brain in just 10 seconds, faster than injected drugs!"
+            info: "10 seconds. That's faster than drugs you inject. Scary, right?"
         }
     ],
     "Prevention": [
         {
             points: 100,
-            question: "What percentage of addiction risk is influenced by genetics?",
+            question: "How much of addiction risk comes from your genes?",
             options: ["10-20%", "40-60%", "70-80%", "90-100%"],
             answer: 1,
-            info: "Genetic factors account for 40-60% of addiction vulnerability. Environment and choices make up the rest."
+            info: "Your genes cover about 40-60%. The rest is up to your environment and choices."
         },
         {
             points: 200,
-            question: "Which of these is a protective factor against substance abuse?",
-            options: ["Social isolation", "Strong family bonds", "Academic failure", "Peer pressure"],
+            question: "What's a huge help in keeping you away from addiction?",
+            options: ["Being alone", "Strong family vibes", "Failing class", "Peer pressure"],
             answer: 1,
-            info: "Strong relationships, particularly with family, are one of the strongest protective factors."
+            info: "Having people who care about you, especially family, is a massive shield against addiction."
         },
         {
             points: 300,
-            question: "At what age is the brain most vulnerable to addiction?",
+            question: "When is your brain most likely to get hooked on something?",
             options: ["Before age 10", "Ages 12-25", "Ages 30-40", "After age 50"],
             answer: 1,
-            info: "The brain continues developing until about age 25. Early substance use can significantly impact brain development."
+            info: "Your brain is still building itself until you're like 25. Using drugs during that time can mess up the wiring."
         },
         {
             points: 400,
-            question: "What's the most effective way to prevent teen substance abuse?",
-            options: ["Punishment", "Ignoring it", "Open communication + education", "Complete isolation"],
+            question: "What actually works to stop teens from using drugs?",
+            options: ["Strict punishment", "Ignoring it", "Real talk & facts", "Locking them up"],
             answer: 2,
-            info: "Evidence shows that open, honest communication combined with education is most effective."
+            info: "Honest conversations and knowing the facts work way better than just scaring people."
         }
     ],
     "Myths vs Facts": [
         {
             points: 100,
-            question: "True or False: Addiction is a choice, not a disease.",
+            question: "True or False: Addiction is just a bad choice.",
             options: ["True", "False"],
             answer: 1,
-            info: "FALSE. Addiction is a chronic brain disease that changes brain structure and function."
+            info: "False. It's a brain disease. It changes how your brain actually works."
         },
         {
             points: 200,
-            question: "True or False: You can't get addicted from prescription medications if taken as prescribed.",
+            question: "True or False: Prescribed meds are always safe.",
             options: ["True", "False"],
             answer: 1,
-            info: "FALSE. Even when taken as prescribed, some medications (especially opioids) can lead to dependence."
+            info: "False. Even if a doctor gives them to you, stuff like opioids can still get you hooked."
         },
         {
             points: 300,
-            question: "True or False: Natural substances like marijuana can't be addictive.",
+            question: "True or False: Weed is natural so it can't be addictive.",
             options: ["True", "False"],
             answer: 1,
-            info: "FALSE. About 9% of marijuana users become addicted. The rate is higher for those who start young."
+            info: "False. Plenty of people get addicted to weed, especially if they start young."
         },
         {
             points: 400,
-            question: "True or False: People with addiction can stop anytime they want to.",
+            question: "True or False: If you're addicted, you can just stop whenever.",
             options: ["True", "False"],
             answer: 1,
-            info: "FALSE. Addiction changes brain chemistry, making it extremely difficult to quit without help."
+            info: "False. Once your brain chemistry changes, quitting on your own is extremely hard."
         }
     ],
     "Signs & Symptoms": [
         {
             points: 100,
-            question: "Needing more of a substance to get the same effect is called:",
+            question: "When you need more of a drug to feel the same high, it's called:",
             options: ["Withdrawal", "Tolerance", "Dependence", "Craving"],
             answer: 1,
-            info: "Tolerance develops when the body adapts to regular substance use."
+            info: "That's tolerance. Your body gets used to it, so you have to take more. Not good."
         },
         {
             points: 200,
-            question: "Physical symptoms when stopping a substance are called:",
+            question: "Feeling sick when you stop using is called:",
             options: ["Side effects", "Withdrawal", "Tolerance", "Allergies"],
             answer: 1,
-            info: "Withdrawal symptoms vary by substance but can include anxiety, sweating, tremors, and nausea."
+            info: "Withdrawal. It can be anything from anxiety to shaking and nausea."
         },
         {
             points: 300,
-            question: "Which is NOT a common warning sign of addiction?",
-            options: ["Lying about use", "Neglecting responsibilities", "Increased social activities", "Secrecy"],
+            question: "Which of these is NOT a sign of addiction?",
+            options: ["Lying", "Dropping hobbies", "Being super social", "Being secretive"],
             answer: 2,
-            info: "Addiction typically leads to DECREASED social activities and isolation, not increased."
+            info: "Addiction usually makes people isolate themselves, not go out more."
         },
         {
             points: 400,
-            question: "What's the medical term for the intense urge to use a substance?",
+            question: "What do doctors call that intense urge to use?",
             options: ["Tolerance", "Dependence", "Craving", "Withdrawal"],
             answer: 2,
-            info: "Cravings are powerful urges that can persist long after physical withdrawal symptoms end."
+            info: "Cravings. They're powerful urges that can stick around for a long time."
         }
     ],
     "Recovery & Help": [
@@ -126,28 +126,28 @@ const categories = {
             question: "What does AA stand for?",
             options: ["Addiction Anonymous", "Alcoholics Anonymous", "Awareness Alliance", "Aid Association"],
             answer: 1,
-            info: "Alcoholics Anonymous is a worldwide peer support program founded in 1935."
+            info: "Alcoholics Anonymous. It's been helping people stay sober since 1935."
         },
         {
             points: 200,
-            question: "What's the national substance abuse helpline number?",
+            question: "Who do you call for 24/7 help with substance abuse?",
             options: ["1-800-662-HELP", "911", "311", "411"],
             answer: 0,
-            info: "1-800-662-HELP (4357) is SAMHSA's National Helpline, available 24/7, free and confidential."
+            info: "1-800-662-HELP. It's free, confidential, and they can help you find treatment."
         },
         {
             points: 300,
-            question: "Medication-assisted treatment (MAT) combines medication with:",
-            options: ["Exercise only", "Counseling & behavioral therapy", "Diet changes", "Isolation"],
+            question: "Medication-assisted treatment (MAT) pairs meds with:",
+            options: ["Just exercise", "Counseling & therapy", "Better diet", "Isolation"],
             answer: 1,
-            info: "MAT is most effective when combining FDA-approved medications with counseling and support."
+            info: "The meds help the cravings, and the therapy helps you rebuild your life. Best of both worlds."
         },
         {
             points: 400,
-            question: "What percentage of people who receive treatment achieve long-term recovery?",
-            options: ["Less than 10%", "About 25%", "40-60%", "Over 90%"],
+            question: "Do people actually recover from addiction?",
+            options: ["Rarely", "Maybe 25%", "40-60% do", "Almost everyone"],
             answer: 2,
-            info: "With proper treatment and support, 40-60% of people maintain long-term recovery!"
+            info: "About 40-60% of people maintain long-term recovery with the right help. There's plenty of hope."
         }
     ]
 };
