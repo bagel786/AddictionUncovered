@@ -2,33 +2,33 @@ const resourceContent = {
     'understanding': {
         title: 'Understanding Addiction',
         content: `
-            <p class="mb-4">Addiction is complicated. It's not about being weak; it's a medical thing involving your brain, genes, and environment. Basically, it changes how your brain's reward system works.</p>
-            <p class="mb-4">A bunch of things can raise the risk, like family history or peer pressure. Teen brains are still growing, especially the parts for decision-making, so we gotta be extra careful.</p>
-            <p>Recovery is totally possible, but it looks different for everyone. It usually takes some combo of meds, therapy, and good support to get back on track.</p>
+            <p class="mb-4">Addiction is complex. It is not a sign of weakness; it is a medical condition involving the brain, genetics, and environment. Fundamentally, it alters the brain's reward system.</p>
+            <p class="mb-4">Various factors can increase risk, such as family history or peer pressure. Adolescent brains are still developing, particularly the areas responsible for decision-making, necessitating extra caution.</p>
+            <p>Recovery is entirely possible, though it looks different for everyone. It typically involves a combination of medication, therapy, and a strong support system.</p>
         `
     },
     'prevention': {
         title: 'Prevention Resources',
         content: `
-            <p class="mb-4">Stopping addiction before it starts is huge. Programs that build social skills and family bonds really help lower the risks.</p>
-            <p class="mb-4">Catching things early matters. If you see grades dropping, personality changes, or new friend groups, say something. Honest talk builds trust and helps people bounce back.</p>
-            <p>Communities need to step up too. After-school programs, mentors, and safe places to hang out make a big difference in keeping everyone on a healthy path.</p>
+            <p class="mb-4">Preventing addiction before it starts is crucial. Programs that build social skills and strengthen family bonds are effective in lowering risks.</p>
+            <p class="mb-4">Early intervention matters. If you notice declining grades, personality changes, or new peer groups, speak up. Honest communication builds trust and aids resilience.</p>
+            <p>Community involvement is also key. After-school programs, mentorships, and safe environments make a significant difference in keeping everyone on a healthy path.</p>
         `
     },
     'family': {
         title: 'Family Support',
         content: `
-            <p class="mb-4">Addiction hits the whole family, not just the person using. It's confusing, exhausting, and stressful. Groups like Al-Anon show you that you didn't cause it, and you can't control it.</p>
-            <p class="mb-4">Learning about addiction as a disease helps you stop judging and start helping effectively. Setting healthy boundaries is key.</p>
-            <p>You gotta take care of yourself too. Therapy and support groups give you the strength to handle the chaos and support your loved one without losing yourself.</p>
+            <p class="mb-4">Addiction impacts the entire family, not just the individual. It can be confusing, exhausting, and stressful. Groups like Al-Anon demonstrate that you are not the cause, and you cannot control it.</p>
+            <p class="mb-4">Understanding addiction as a disease helps shift focus from judgment to effective support. Establishing healthy boundaries is essential.</p>
+            <p>Self-care is equally important. Therapy and support groups provide the strength needed to navigate challenges and support your loved one without compromising your own well-being.</p>
         `
     },
     'mental-health': {
         title: 'Mental Health Support',
         content: `
-            <p class="mb-4">Mental health and drugs are often linked. Sometimes people use substances to cope with anxiety or depression, but it usually just makes things worse.</p>
-            <p class="mb-4">Treating both at the same time is the best move. Places like the Jed Foundation have great tools to help you manage specific emotions and situations.</p>
-            <p>Knowing the signs is step one. Don't be afraid to ask for help from pros or support groups. Taking care of your mind is just as important as your body.</p>
+            <p class="mb-4">Mental health and substance use are often linked. Individuals may use substances to cope with anxiety or depression, commonly exacerbating the issue.</p>
+            <p class="mb-4">Addressing both simultaneously is the most effective approach. Organizations like the Jed Foundation offer excellent tools for managing specific emotions and situations.</p>
+            <p>Recognizing the signs is the first step. Do not hesitate to seek help from professionals or support groups. Caring for your mental health is as vital as caring for your physical health.</p>
         `
     }
 };
