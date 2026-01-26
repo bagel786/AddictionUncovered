@@ -378,5 +378,200 @@ document.addEventListener('DOMContentLoaded', function () {
             interaction: { mode: 'nearest', axis: 'x', intersect: false }
         }
     });
+    // --- Survey Data (New Section) ---
+
+    const surveyLabels = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+
+    // Knowledge Data
+    const prelimKnowledgeData = [5, 11, 9, 11, 8, 5, 1, 1, 0, 0];
+    const checkpointKnowledgeData = [1, 1, 0, 2, 2, 5, 18, 15, 6, 1];
+
+    // Confidence Data
+    const prelimConfidenceData = [5, 7, 17, 8, 9, 4, 1, 0, 0, 0];
+    const checkpointConfidenceData = [1, 1, 1, 5, 16, 19, 5, 3, 0, 0];
+
+    // Colors
+    // Knowledge: Gradient from Red (low) to Green (high)
+    const knowledgeBackgroundColors = [
+        '#FF4D4D', // 1 - Red
+        '#FF4D4D', // 2
+        '#FF944D', // 3 - Orange
+        '#FF944D', // 4
+        '#FFDA4D', // 5 - Yellow
+        '#FFDA4D', // 6
+        '#A0E04D', // 7 - Light Green
+        '#57E04D', // 8 - Green
+        '#57E04D', // 9
+        '#57E04D'  // 10
+    ];
+    // Confidence: Brand Purple
+    const confidenceBackgroundColor = '#7D4199';
+    const confidenceHoverColor = '#5D2E73';
+
+
+    // 1. Prelim Knowledge Chart
+    const prelimKnowledgeCtx = document.getElementById('prelimKnowledgeChart').getContext('2d');
+    new Chart(prelimKnowledgeCtx, {
+        type: 'bar',
+        data: {
+            labels: surveyLabels,
+            datasets: [{
+                label: 'Number of Responses',
+                data: prelimKnowledgeData,
+                backgroundColor: knowledgeBackgroundColors,
+                borderRadius: 6,
+                borderSkipped: false
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: (items) => `Score: ${items[0].label}`,
+                        label: (item) => `${item.raw} Participants`
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(0, 0, 0, 0.05)' },
+                    title: { display: true, text: 'Number of Responses' }
+                },
+                x: {
+                    grid: { display: false },
+                    title: { display: true, text: 'Score (1-10)' }
+                }
+            }
+        }
+    });
+
+    // 2. Checkpoint Knowledge Chart
+    const checkpointKnowledgeCtx = document.getElementById('checkpointKnowledgeChart').getContext('2d');
+    new Chart(checkpointKnowledgeCtx, {
+        type: 'bar',
+        data: {
+            labels: surveyLabels,
+            datasets: [{
+                label: 'Number of Responses',
+                data: checkpointKnowledgeData,
+                backgroundColor: knowledgeBackgroundColors,
+                borderRadius: 6,
+                borderSkipped: false
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: (items) => `Score: ${items[0].label}`,
+                        label: (item) => `${item.raw} Participants`
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(0, 0, 0, 0.05)' },
+                    title: { display: true, text: 'Number of Responses' }
+                },
+                x: {
+                    grid: { display: false },
+                    title: { display: true, text: 'Score (1-10)' }
+                }
+            }
+        }
+    });
+
+    // 3. Prelim Confidence Chart
+    const prelimConfidenceCtx = document.getElementById('prelimConfidenceChart').getContext('2d');
+    new Chart(prelimConfidenceCtx, {
+        type: 'bar',
+        data: {
+            labels: surveyLabels,
+            datasets: [{
+                label: 'Generic Label', // Hidden
+                data: prelimConfidenceData,
+                backgroundColor: '#4285F4', // Blue as per reference, or brand logic? Let's use Blue to distinguish "Confidence" from "Knowledge" if we want to follow reference closely, OR use Brand. Original ref had blue. Brand has Teal. Let's use Brand Teal for Confidence to look good. Actually, let's use the Reference Blue shade but polished.
+                // Re-reading user: "Put the preliminary confidence rating and checkpoint confidence rating side by side". 
+                // Color preference: Premium.
+                // Let's use #4AC2C2 (Uncovered Teal) for Confidence. It contrasts with the Rainbow Knowledge.
+                backgroundColor: '#4AC2C2',
+                borderRadius: 6,
+                borderSkipped: false
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: (items) => `Rating: ${items[0].label}`,
+                        label: (item) => `${item.raw} Participants`
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(0, 0, 0, 0.05)' },
+                    title: { display: true, text: 'Number of Responses' }
+                },
+                x: {
+                    grid: { display: false },
+                    title: { display: true, text: 'Confidence Rating (1-10)' }
+                }
+            }
+        }
+    });
+
+    // 4. Checkpoint Confidence Chart
+    const checkpointConfidenceCtx = document.getElementById('checkpointConfidenceChart').getContext('2d');
+    new Chart(checkpointConfidenceCtx, {
+        type: 'bar',
+        data: {
+            labels: surveyLabels,
+            datasets: [{
+                label: 'Generic Label',
+                data: checkpointConfidenceData,
+                backgroundColor: '#4AC2C2', // Uncovered Teal
+                borderRadius: 6,
+                borderSkipped: false
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: (items) => `Rating: ${items[0].label}`,
+                        label: (item) => `${item.raw} Participants`
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(0, 0, 0, 0.05)' },
+                    title: { display: true, text: 'Number of Responses' }
+                },
+                x: {
+                    grid: { display: false },
+                    title: { display: true, text: 'Confidence Rating (1-10)' }
+                }
+            }
+        }
+    });
 });
+
 

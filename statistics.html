@@ -133,6 +133,77 @@
     <!-- Statistics Content -->
     <section class="py-20 px-4">
         <div class="max-w-7xl mx-auto space-y-20">
+            <!-- Survey Statistics Section -->
+            <div class="space-y-12">
+                <!-- Into Text -->
+                <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
+                    <h2 class="text-3xl font-heading font-bold text-uncovered-purple mb-6 text-center">Campaign Impact
+                        Survey</h2>
+                    <p class="text-lg text-uncovered-dark opacity-90 leading-relaxed mb-8">
+                        To gauge the knowledge of our audience before we initially launched our campaign, we released a
+                        preliminary survey that asked a series of 10 SUD related questions along with a final question
+                        that asked the participant to rate their confidence on the topic of substance use disorder.
+                        Then, right before our area competition, we released an almost identical check-point form in
+                        order to see if our campaign had changed the participants' knowledge and confidence revolving
+                        around the topic of addiction.
+                    </p>
+
+                    <!-- Survey Data Graphs (Knowledge) -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-uncovered-cream rounded-2xl p-6">
+                            <h3 class="text-xl font-heading font-bold text-uncovered-dark mb-4 text-center">Preliminary
+                                Survey Data (Knowledge)</h3>
+                            <div class="relative h-[300px] w-full">
+                                <canvas id="prelimKnowledgeChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-uncovered-cream rounded-2xl p-6">
+                            <h3 class="text-xl font-heading font-bold text-uncovered-dark mb-4 text-center">Check-point
+                                Survey Data (Knowledge)</h3>
+                            <div class="relative h-[300px] w-full">
+                                <canvas id="checkpointKnowledgeChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description 1 -->
+                    <p class="text-lg text-uncovered-dark opacity-90 leading-relaxed mb-12">
+                        As you can see in our survey data graphs above, it is clear that the accuracy of the amount of
+                        questions answered correctly increased after the duration of our campaign so far. The average
+                        amount of questions answered correctly <b>increased from around 3.59 to around 7.08</b> -
+                        showing a <b>substantial increase in the amount of knowledge that our audience had</b>. The
+                        distribution of scores also trended upwards overall.
+                    </p>
+
+
+                    <!-- Confidence Rating Graphs -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-uncovered-cream rounded-2xl p-6">
+                            <h3 class="text-xl font-heading font-bold text-uncovered-dark mb-4 text-center">Preliminary
+                                Confidence Rating</h3>
+                            <div class="relative h-[300px] w-full">
+                                <canvas id="prelimConfidenceChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="bg-uncovered-cream rounded-2xl p-6">
+                            <h3 class="text-xl font-heading font-bold text-uncovered-dark mb-4 text-center">Check-point
+                                Confidence Rating</h3>
+                            <div class="relative h-[300px] w-full">
+                                <canvas id="checkpointConfidenceChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description 2 -->
+                    <p class="text-lg text-uncovered-dark opacity-90 leading-relaxed">
+                        As you can see in our survey data graphs above, there is a <b>significant increase in the
+                            confidence of our audience over the course of our campaign thus far</b>. The average
+                        self-reported <b>confidence rating increased from about 3.49 to about 5.47</b>, which shows an
+                        obvious increase in the amount of literacy on our topic.
+                    </p>
+                </div>
+            </div>
+
             <!-- Views Chart -->
             <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
                 <h2 class="text-3xl font-heading font-bold text-uncovered-purple mb-6 text-center">Social Media Views
